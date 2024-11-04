@@ -7,5 +7,72 @@
       "path": ".AL-Go"
     }
   ],
-  "settings": {}
+  "settings": {
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+      "${UICop}",
+      "${CodeCop}",
+      "${PerTenantExtensionCop}"
+    ],
+    "al.ruleSetPath": ".codeAnalysis\\FRW.ruleset.json",
+    "alVarHelper.ignoreALPrefix": "PTE_",
+    "alVarHelper.ignoreALSuffix": "_PTE",
+    "alNavigator.ignoreALSuffix": "_PTE",
+    "alNavigator.ignoreALPrefix": "PTE_",
+    "CRS.ObjectNamePrefix": "PTE_",
+    "CRS.RemovePrefixFromFilename": true,
+    "CRS.ExtensionObjectNamePattern": null,
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.OnSaveAlFileAction": "DoNothing",
+    "ev-tools.containerCountry": "be",
+    "ev-tools.useMultitenant": false,
+    "ev-tools.showContainerWebpanel": false,
+    "ev-tools.storeContainerSettings": true,
+    "todo-tree.general.tags": [
+      "BUG",
+      "HACK",
+      "FIXME",
+      "TODO",
+      "XXX",
+      "UPGRADE"
+    ],
+    "ev-tools.containerSettings": {
+      "name": "shyardalg",
+      "type": "Sandbox",
+      "select": "Latest",
+      "version": "25.1",
+      "country": "us",
+      "containerurl": "",
+      "tag": "",
+      "licensefile": "",
+      "isolation": "process",
+      "authentication": "UserPassword",
+      "username": "Dev",
+      "password": "Logon2me",
+      "createshortcut": "Desktop",
+      "ismultitenant": false,
+      "customparameter": "",
+      "includetesttoolkit": false,
+      "testlibrariesonly": true,
+      "usessl": false,
+      "webclientport": "",
+      "publishedports": "",
+      "sqlbackupfile": "",
+      "useexternaldatabase": false,
+      "databaseserver": "",
+      "databaseinstance": "",
+      "databasename": "",
+      "sqlusername": "",
+      "sqlpassword": "",
+      "repository": "",
+      "updateDependencies": false
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "waldo.al-extension-pack"
+    ]
+  }
 }

@@ -1,5 +1,21 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Publish: debugathon UAT",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "Sandbox",
+            "environmentName": "uat",
+            "startupObjectId": 5404,
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "tenant": "126ec44a-ce73-4e94-9e89-8cd017fb0842"
+        }
     ]
 }
